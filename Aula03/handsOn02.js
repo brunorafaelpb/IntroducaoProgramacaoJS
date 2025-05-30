@@ -1,4 +1,3 @@
-const idadeMinimaParaAdocao = 2
 const dog = {
     nome: "Rangel",
     peso: 10,
