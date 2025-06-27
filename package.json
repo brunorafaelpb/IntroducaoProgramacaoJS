@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/brunorafaelpb/IntroducaoProgramacaoJS#readme",
   "devDependencies": {
-    "mocha": "^11.5.0"
+    "mocha": "^11.7.1"
   }
 }

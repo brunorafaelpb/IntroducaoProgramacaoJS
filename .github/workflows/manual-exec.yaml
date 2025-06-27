@@ -1,0 +1,27 @@
+# Disparo manual
+name: 'Execução Manual - Trabalho final'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  e2e-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Clone do projeto
+      - uses: actions/checkout@v4
+
+      # Instalação do Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      - name: Instalando dependências
+        run: yarn
+
+      - name: Instalando Mocha
+        run: yarn add --dev mocha
+
+      - name: Executando Testes
+        run: yarn test
