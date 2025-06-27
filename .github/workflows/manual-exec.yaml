@@ -17,5 +17,10 @@ jobs:
         with:
           node-version: 22.x
 
+      # Instalação do Mocha
+      - name: Instalando Mocha
+        run: npm install mocha
+
+      # Exe utando os testes
       - name: Executando Testes
         run: npm run test
