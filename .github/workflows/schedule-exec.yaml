@@ -1,8 +1,9 @@
 # Disparo manual
-name: 'Execução Manual - Trabalho final'
+name: 'Execução Agendada - Trabalho final'
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 0'
 
 jobs:
   e2e-test:
