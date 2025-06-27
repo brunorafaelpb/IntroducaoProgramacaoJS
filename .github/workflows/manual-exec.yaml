@@ -17,11 +17,5 @@ jobs:
         with:
           node-version: 22.x
 
-      - name: Instalando dependências
-        run: yarn
-
-      - name: Instalando Mocha
-        run: yarn add --dev mocha
-
       - name: Executando Testes
-        run: yarn test
+        run: npm run test
